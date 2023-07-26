@@ -11,6 +11,7 @@
 #include "../../Common/d3dApp.h"
 #include "../../Common/MathHelper.h"
 #include "../../Common/UploadBuffer.h"
+#include <iostream>
 
 using Microsoft::WRL::ComPtr;
 using namespace DirectX;
@@ -91,6 +92,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance,
     try
     {
         BoxApp theApp(hInstance);
+        std::cout << "d3dapp running!" << std::endl;
         if(!theApp.Initialize())
             return 0;
 
